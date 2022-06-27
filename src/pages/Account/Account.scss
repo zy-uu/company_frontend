@@ -1,0 +1,14 @@
+@import '../../styles/app.scss';
+
+.account-page {
+    .table-responsive {
+        td,th {
+            font-weight: $font-weight-normal;
+        }
+        tbody tr {
+            td {
+              min-width: 100px;
+            }
+          }
+    }
+}

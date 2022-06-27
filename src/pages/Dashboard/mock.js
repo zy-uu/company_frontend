@@ -1,7 +1,7 @@
 export default {
   bigStat: [
     {
-      product: 'Light Blue',
+      product: '收入详细',
       total: '4,232',
       color: 'primary',
       registrations: {
@@ -14,7 +14,7 @@ export default {
       },
     },
     {
-      product: 'Sing App',
+      product: '支出详细',
       total: '754',
       color: 'danger',
       registrations: {
@@ -27,7 +27,7 @@ export default {
       },
     },
     {
-      product: 'RNS',
+      product: '利润',
       total: '1,025',
       color: 'info',
       registrations: {
@@ -43,29 +43,29 @@ export default {
   table: [
     {
       id: 0,
-      name: 'Mark Otto',
-      email: 'ottoto@wxample.com',
-      product: 'ON the Road',
-      price: '$25 224.2',
-      date: '11 May 2017',
-      city: 'Otsego',
-      status: 'Sent',
+      name: '哈哈哈有限垄断公司',
+      email: '天天银行',
+      product: '本公司垄断全球哈哈哈产品',
+      price: '￥1.2',
+      date: '5/11/2017',
+      city: '上海',
+      status: '已发送',
     },
     {
       id: 1,
-      name: 'Jacob Thornton',
+      name: '廣東嘿嘿嘿有限股份公司',
       email: 'thornton@wxample.com',
-      product: 'HP Core i7',
+      product: '你無使猜啦，又猜無倒葛良心產品',
       price: '$1 254.2',
       date: '4 Jun 2017',
-      city: 'Fivepointville',
+      city: 'HK',
       status: 'Sent',
     },
     {
       id: 2,
-      name: 'Larry the Bird',
+      name: 'Economy-HK',
       email: 'bird@wxample.com',
-      product: 'Air Pro',
+      product: '快滴揾一揾你身邊個ECONOMY啦~裏斗都有你中意個產品o',
       price: '$1 570.0',
       date: '27 Aug 2017',
       city: 'Leadville North',

@@ -7,6 +7,7 @@ import VueTouch from 'vue-touch';
 import Trend from 'vuetrend';
 import Toasted from 'vue-toasted';
 import VueApexCharts from 'vue-apexcharts';
+import Vuex from "vuex";
 
 import store from './store';
 import router from './Routes';
@@ -14,6 +15,7 @@ import App from './App';
 import layoutMixin from './mixins/layout';
 import Widget from './components/Widget/Widget';
 
+Vue.use(Vuex);
 Vue.use(BootstrapVue);
 Vue.use(VueTouch);
 Vue.use(Trend);

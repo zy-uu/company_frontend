@@ -7,6 +7,12 @@ import ErrorPage from '@/pages/Error/Error';
 // Core
 import TypographyPage from '@/pages/Typography/Typography';
 
+//Profile
+import Profile from '@/pages/Profile/Profile';
+
+//Account 
+import Account from '@/pages/Account/Account';
+
 // Tables
 import TablesBasicPage from '@/pages/Tables/Basic';
 
@@ -26,12 +32,18 @@ import NotificationsPage from '@/pages/Notifications/Notifications';
 
 Vue.use(Router);
 
-export default new Router({
+const routerConfig = {
+  mode: 'history',
   routes: [
     {
       path: '/login',
       name: 'Login',
       component: Login,
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: () => import("./pages/Login/Register")
     },
     {
       path: '/error',
@@ -49,10 +61,20 @@ export default new Router({
           component: AnalyticsPage,
         },
         {
+          path: 'account',
+          name: 'Account',
+          component: Account
+        },
+        {
           path: 'typography',
           name: 'TypographyPage',
           component: TypographyPage,
         },
+        {
+          path: 'profile',
+          name: 'Profile',
+          component: Profile,
+        },   
         {
           path: 'components/icons',
           name: 'IconsPage',
@@ -81,4 +103,7 @@ export default new Router({
       ],
     },
   ],
-});
+
+}
+
+export default new Router(routerConfig);

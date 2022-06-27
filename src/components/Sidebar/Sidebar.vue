@@ -24,6 +24,22 @@
             isHeader
         />
         <NavLink
+        :activeItem="activeItem"
+        header="Profile"
+        link="/app/profile"
+        iconName="flaticon-equal-2"
+        index="proflie"
+        isHeader
+        />
+        <NavLink
+        :activeItem="activeItem"
+        header="Account"
+        link="/app/Account"
+        iconName="flaticon-equal-2"
+        index="Account"
+        isHeader
+        />
+        <NavLink
             :activeItem="activeItem"
             header="Typography"
             link="/app/typography"

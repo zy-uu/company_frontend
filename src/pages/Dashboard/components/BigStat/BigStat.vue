@@ -7,12 +7,12 @@
       <div class="d-flex justify-content-between flex-wrap px-4">
         <h4 class='d-flex align-items-center pb-1 bigStatTitle'>
           <span :class="`circle bg-${color} mr-sm`" :style="{ fontSize: '6px' }" />
-            Statistic <span class="fw-normal ml-xs">{{product}}</span>
+             <span class="fw-normal ml-xs">{{product}}</span>
         </h4>
         <b-dropdown :text="text" variant="default" size="sm">
-          <b-dropdown-item-button @click="changeText('Daily')">Daily</b-dropdown-item-button>
-          <b-dropdown-item-button @click="changeText('Weekly')">Weekly</b-dropdown-item-button>
-          <b-dropdown-item-button @click="changeText('Yearly')">Yearly</b-dropdown-item-button>
+          <b-dropdown-item-button @click="changeText('本月')">本月</b-dropdown-item-button>
+          <b-dropdown-item-button @click="changeText('本季度')">本季度</b-dropdown-item-button>
+          <b-dropdown-item-button @click="changeText('本年')">本年</b-dropdown-item-button>
         </b-dropdown>
       </div>
       <div class="px-5">
@@ -26,7 +26,7 @@
                 rotate-${registrations.profit ? '315' : '45'}`"
               />
             </div>
-            <p class="text-muted mb-0 mr"><small>Registrations</small></p>
+            <p class="text-muted mb-0 mr"><small>较上月收入</small></p>
           </div>
           <div class="w-50 py-3 pl-2">
             <div class="d-flex align-items-start">
@@ -36,7 +36,7 @@
                 rotate-${bounce.profit ? '315' : '45'}`"
               />
             </div>
-            <p class="text-muted mb-0 mr"><small>Bounce Rate</small></p>
+            <p class="text-muted mb-0 mr"><small>较上月比例</small></p>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default {
   components: { Widget },
   data() {
     return {
-      text: 'Daily',
+      text: '本月',
     };
   },
   methods: {
